@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Chase is Great </title>
+	<link rel="stylesheet" type = "text/css" href = "styling.css">
+	<meta name = "author" content = "Chase McCarty">
+	<meta name = "description" content = "A collection of Great things, for the Greats interested in Greatness">
+	<meta name = "keywords" content = "great, greater, greatest, greatness, chase, cats, long cats, kittens, great cats">
+	<meta name = "copyright" content = "2014">
+</head>
+<body>
+	<h2> Please Submit your Long Cat Below </h2>
+
+	<form method = "post" action = "cgi-bin/postcat.cgi" enctype="multipart/form-data">
+
+		Name your cat:
+		<input type = "text" name = "Cat name" size = "40" maxlength = "50"> <br> <br>
+
+		What Color is your cat: 
+		<select name = "Color" size = "1">
+		<option vale = "white"> White
+		<option vale = "black"> Black
+		<option vale = "grey"> Grey
+		<option vale = "orange"> Orange
+		</select> <br> <br>
+
+		How long is your Cat:
+		<input type = "range" min = "0" max = "100" step = "1" value = "50" onchange="document.getElementById('display').innerHTML = this.value">
+		<span id = "display">50</span> <br><br>
+
+		Your Cat Picutre: 
+		<input type = "file" name = "photo" > <br> <br>
+		<input type = "submit" value = "send">
+		<input type = "reset" value = "Reset">
+
+
+
+	</form>
+</body>
+</html>
